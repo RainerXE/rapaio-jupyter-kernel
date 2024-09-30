@@ -6,7 +6,10 @@ Jupyter kernel for Java language based on JShell. It implements Jupyter message 
 
 The aim of this for here is for:
   a) work with the most recetn version of Java (at the moment Java 23
+  
   b) be used with GraalVM for multi-languega support via Truffle
+
+  c) work on MacOS on an Mx machine
 
 
 ## Introduction
