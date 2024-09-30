@@ -2,6 +2,13 @@
 
 Jupyter kernel for Java language based on JShell. It implements Jupyter message specification version 5.4, and it requires Java = 22.
 
+#REX: 
+
+The aim of this for here is for:
+  a) work with the most recetn version of Java (at the moment Java 23
+  b) be used with GraalVM for multi-languega support via Truffle
+
+
 ## Introduction
 
 I started implementing this kernel since I believe Java deserves a full feature and properly maintained jupyter kernel. 
