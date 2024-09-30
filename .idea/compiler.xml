@@ -9,6 +9,6 @@
         <module name="rapaio-jupyter-kernel" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="23" />
   </component>
 </project>

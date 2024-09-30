@@ -1,31 +1,6 @@
 package org.rapaio.jupyter.kernel.core.java;
 
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.b;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.br;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.each;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.iif;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.join;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.p;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.texts;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.EnumSet;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-import java.util.UUID;
-import java.util.logging.Logger;
-import java.util.stream.Collectors;
-
+import jdk.jshell.*;
 import org.rapaio.jupyter.kernel.core.CompleteMatches;
 import org.rapaio.jupyter.kernel.core.ExecutionContext;
 import org.rapaio.jupyter.kernel.core.display.DisplayData;
@@ -35,12 +10,12 @@ import org.rapaio.jupyter.kernel.core.display.text.ANSI;
 import org.rapaio.jupyter.kernel.core.java.io.JShellConsole;
 import org.rapaio.jupyter.kernel.message.messages.ShellIsCompleteReply;
 
-import jdk.jshell.EvalException;
-import jdk.jshell.JShell;
-import jdk.jshell.JShellException;
-import jdk.jshell.Snippet;
-import jdk.jshell.SnippetEvent;
-import jdk.jshell.SourceCodeAnalysis;
+import java.io.*;
+import java.util.*;
+import java.util.logging.Logger;
+import java.util.stream.Collectors;
+
+import static org.rapaio.jupyter.kernel.core.display.html.Tags.*;
 
 public class JavaEngine {
 
@@ -260,7 +235,7 @@ public class JavaEngine {
 
         protected Builder(JShellConsole shellConsole) {
             this.shellConsole = shellConsole;
-            this.compilerOptions.addAll(List.of("--enable-preview", "--release", "22"));
+            this.compilerOptions.addAll(List.of("--enable-preview", "--release", "23"));
         }
 
         public Builder withTimeoutMillis(Long timeoutMillis) {

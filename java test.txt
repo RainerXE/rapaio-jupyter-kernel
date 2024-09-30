@@ -1,0 +1,1 @@
+java --enable-preview --add-modules java.base,jdk.incubator.vector -jar /Users/rainer/Library/Jupyter/kernels/rapaio-jupyter-kernel/rapaio-jupyter-kernel.jar

@@ -1,12 +1,12 @@
 package org.rapaio.jupyter.kernel.core.magic.interpolate;
 
+import org.rapaio.jupyter.kernel.core.ExecutionContext;
+import org.rapaio.jupyter.kernel.core.RapaioKernel;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-
-import org.rapaio.jupyter.kernel.core.ExecutionContext;
-import org.rapaio.jupyter.kernel.core.RapaioKernel;
 
 /**
  * This class implements interpolation of variables and eventual other calls into a string.

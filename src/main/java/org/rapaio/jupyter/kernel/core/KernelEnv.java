@@ -1,8 +1,6 @@
 package org.rapaio.jupyter.kernel.core;
 
-import static org.rapaio.jupyter.kernel.core.RapaioKernel.RJK_COMPILER_OPTIONS;
-import static org.rapaio.jupyter.kernel.core.RapaioKernel.RJK_INIT_SCRIPT;
-import static org.rapaio.jupyter.kernel.core.RapaioKernel.RJK_TIMEOUT_MILLIS;
+import org.rapaio.jupyter.kernel.GeneralProperties;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.rapaio.jupyter.kernel.GeneralProperties;
+import static org.rapaio.jupyter.kernel.core.RapaioKernel.*;
 
 public class KernelEnv {
 

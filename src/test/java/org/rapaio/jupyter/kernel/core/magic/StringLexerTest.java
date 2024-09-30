@@ -1,15 +1,15 @@
 package org.rapaio.jupyter.kernel.core.magic;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
-import java.util.List;
-
 import org.junit.jupiter.api.Test;
 import org.rapaio.jupyter.kernel.core.magic.interpolate.InterpolationException;
 import org.rapaio.jupyter.kernel.core.magic.interpolate.StringLexer;
 import org.rapaio.jupyter.kernel.core.magic.interpolate.StringTemplateLexer;
 import org.rapaio.jupyter.kernel.core.magic.interpolate.StringToken;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StringLexerTest {
 

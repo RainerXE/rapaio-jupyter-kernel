@@ -1,12 +1,11 @@
 package org.rapaio.jupyter.kernel.message.messages;
 
-import java.util.List;
-import java.util.function.Function;
-
+import com.google.gson.annotations.SerializedName;
 import org.rapaio.jupyter.kernel.message.ContentType;
 import org.rapaio.jupyter.kernel.message.MessageType;
 
-import com.google.gson.annotations.SerializedName;
+import java.util.List;
+import java.util.function.Function;
 
 /**
  * See also {@link ErrorReply}

@@ -1,39 +1,9 @@
 package org.rapaio.jupyter.kernel.message;
 
+import org.rapaio.jupyter.kernel.message.messages.*;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import org.rapaio.jupyter.kernel.message.messages.ControlInterruptReply;
-import org.rapaio.jupyter.kernel.message.messages.ControlInterruptRequest;
-import org.rapaio.jupyter.kernel.message.messages.ControlShutdownReply;
-import org.rapaio.jupyter.kernel.message.messages.ControlShutdownRequest;
-import org.rapaio.jupyter.kernel.message.messages.CustomCommClose;
-import org.rapaio.jupyter.kernel.message.messages.CustomCommMsg;
-import org.rapaio.jupyter.kernel.message.messages.CustomCommOpen;
-import org.rapaio.jupyter.kernel.message.messages.ErrorReply;
-import org.rapaio.jupyter.kernel.message.messages.IOPubClearOutput;
-import org.rapaio.jupyter.kernel.message.messages.IOPubDisplayData;
-import org.rapaio.jupyter.kernel.message.messages.IOPubError;
-import org.rapaio.jupyter.kernel.message.messages.IOPubExecuteInput;
-import org.rapaio.jupyter.kernel.message.messages.IOPubExecuteResult;
-import org.rapaio.jupyter.kernel.message.messages.IOPubStatus;
-import org.rapaio.jupyter.kernel.message.messages.IOPubStream;
-import org.rapaio.jupyter.kernel.message.messages.IOPubUpdateDisplayData;
-import org.rapaio.jupyter.kernel.message.messages.ShellCommInfoReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellCommInfoRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellCompleteReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellCompleteRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellExecuteReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellExecuteRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellHistoryRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellInspectReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellInspectRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellIsCompleteReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellIsCompleteRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellKernelInfoReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellKernelInfoRequest;
-import org.rapaio.jupyter.kernel.message.messages.StdinInputReply;
-import org.rapaio.jupyter.kernel.message.messages.StdinInputRequest;
 
 /**
  * Message type definitions are found at

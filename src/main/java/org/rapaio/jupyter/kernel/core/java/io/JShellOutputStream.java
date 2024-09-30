@@ -1,9 +1,9 @@
 package org.rapaio.jupyter.kernel.core.java.io;
 
+import org.rapaio.jupyter.kernel.channels.Channels;
+
 import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
-
-import org.rapaio.jupyter.kernel.channels.Channels;
 
 public class JShellOutputStream extends ByteArrayOutputStream {
     private static final int INITIAL_BUFFER_CAP = 1024;

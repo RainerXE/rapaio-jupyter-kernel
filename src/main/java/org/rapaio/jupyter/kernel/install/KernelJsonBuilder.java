@@ -1,13 +1,9 @@
 package org.rapaio.jupyter.kernel.install;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-
 import org.rapaio.jupyter.kernel.GeneralProperties;
 import org.rapaio.jupyter.kernel.core.RapaioKernel;
+
+import java.util.*;
 
 public class KernelJsonBuilder {
 

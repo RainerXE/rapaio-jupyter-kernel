@@ -1,14 +1,5 @@
 package org.rapaio.jupyter.kernel.core;
 
-import java.io.InputStream;
-import java.io.PrintStream;
-import java.nio.charset.StandardCharsets;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.logging.Logger;
-
 import org.rapaio.jupyter.kernel.GeneralProperties;
 import org.rapaio.jupyter.kernel.channels.Channels;
 import org.rapaio.jupyter.kernel.core.display.DisplayData;
@@ -17,40 +8,21 @@ import org.rapaio.jupyter.kernel.core.format.ErrorFormatters;
 import org.rapaio.jupyter.kernel.core.java.IsCompleteResult;
 import org.rapaio.jupyter.kernel.core.java.JavaEngine;
 import org.rapaio.jupyter.kernel.core.java.io.JShellConsole;
-import org.rapaio.jupyter.kernel.core.magic.MagicCompleteResult;
-import org.rapaio.jupyter.kernel.core.magic.MagicEngine;
-import org.rapaio.jupyter.kernel.core.magic.MagicEvalResult;
-import org.rapaio.jupyter.kernel.core.magic.MagicInspectResult;
-import org.rapaio.jupyter.kernel.core.magic.MagicIsCompleteResult;
+import org.rapaio.jupyter.kernel.core.magic.*;
 import org.rapaio.jupyter.kernel.core.magic.dependencies.MimaDependencyManager;
 import org.rapaio.jupyter.kernel.message.Header;
 import org.rapaio.jupyter.kernel.message.Message;
 import org.rapaio.jupyter.kernel.message.MessageType;
-import org.rapaio.jupyter.kernel.message.messages.ControlInterruptReply;
-import org.rapaio.jupyter.kernel.message.messages.ControlInterruptRequest;
-import org.rapaio.jupyter.kernel.message.messages.ControlShutdownReply;
-import org.rapaio.jupyter.kernel.message.messages.ControlShutdownRequest;
-import org.rapaio.jupyter.kernel.message.messages.CustomCommClose;
-import org.rapaio.jupyter.kernel.message.messages.CustomCommMsg;
-import org.rapaio.jupyter.kernel.message.messages.CustomCommOpen;
-import org.rapaio.jupyter.kernel.message.messages.ErrorReply;
-import org.rapaio.jupyter.kernel.message.messages.IOPubDisplayData;
-import org.rapaio.jupyter.kernel.message.messages.IOPubError;
-import org.rapaio.jupyter.kernel.message.messages.IOPubExecuteInput;
-import org.rapaio.jupyter.kernel.message.messages.IOPubExecuteResult;
-import org.rapaio.jupyter.kernel.message.messages.IOPubUpdateDisplayData;
-import org.rapaio.jupyter.kernel.message.messages.ShellCommInfoReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellCommInfoRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellCompleteReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellCompleteRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellExecuteReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellExecuteRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellHistoryRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellInspectReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellInspectRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellIsCompleteRequest;
-import org.rapaio.jupyter.kernel.message.messages.ShellKernelInfoReply;
-import org.rapaio.jupyter.kernel.message.messages.ShellKernelInfoRequest;
+import org.rapaio.jupyter.kernel.message.messages.*;
+
+import java.io.InputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+import java.util.Collections;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Logger;
 
 public class RapaioKernel {
 

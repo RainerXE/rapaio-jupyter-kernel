@@ -1,10 +1,10 @@
 package org.rapaio.jupyter.kernel.core.display;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-
-import com.google.gson.annotations.SerializedName;
 
 
 /**

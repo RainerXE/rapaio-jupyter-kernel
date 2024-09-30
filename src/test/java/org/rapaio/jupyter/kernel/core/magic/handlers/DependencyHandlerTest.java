@@ -1,10 +1,5 @@
 package org.rapaio.jupyter.kernel.core.magic.handlers;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,6 +8,11 @@ import org.rapaio.jupyter.kernel.channels.Channels;
 import org.rapaio.jupyter.kernel.core.RapaioKernel;
 import org.rapaio.jupyter.kernel.core.magic.MagicEvalException;
 import org.rapaio.jupyter.kernel.core.magic.MagicParseException;
+
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class DependencyHandlerTest {
 

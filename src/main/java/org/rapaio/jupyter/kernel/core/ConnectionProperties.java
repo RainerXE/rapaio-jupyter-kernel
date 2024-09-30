@@ -1,11 +1,10 @@
 package org.rapaio.jupyter.kernel.core;
 
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-
+import com.google.gson.annotations.SerializedName;
 import org.rapaio.jupyter.kernel.message.HMACDigest;
 
-import com.google.gson.annotations.SerializedName;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 
 public record ConnectionProperties(
         @SerializedName("control_port") int controlPort,

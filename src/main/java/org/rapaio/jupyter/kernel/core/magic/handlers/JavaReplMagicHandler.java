@@ -1,9 +1,6 @@
 package org.rapaio.jupyter.kernel.core.magic.handlers;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
-
+import jdk.jshell.*;
 import org.rapaio.jupyter.kernel.core.RapaioKernel;
 import org.rapaio.jupyter.kernel.core.display.DisplayData;
 import org.rapaio.jupyter.kernel.core.display.text.ANSI;
@@ -12,11 +9,9 @@ import org.rapaio.jupyter.kernel.core.magic.MagicHandler;
 import org.rapaio.jupyter.kernel.core.magic.MagicSnippet;
 import org.rapaio.jupyter.kernel.core.magic.SnippetMagicHandler;
 
-import jdk.jshell.ImportSnippet;
-import jdk.jshell.MethodSnippet;
-import jdk.jshell.Snippet;
-import jdk.jshell.TypeDeclSnippet;
-import jdk.jshell.VarSnippet;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 public class JavaReplMagicHandler extends MagicHandler {
 

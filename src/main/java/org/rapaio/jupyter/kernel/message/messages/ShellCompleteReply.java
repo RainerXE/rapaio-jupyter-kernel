@@ -1,14 +1,13 @@
 package org.rapaio.jupyter.kernel.message.messages;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-
+import com.google.gson.annotations.SerializedName;
 import org.rapaio.jupyter.kernel.core.CompleteMatches;
 import org.rapaio.jupyter.kernel.message.ContentType;
 import org.rapaio.jupyter.kernel.message.MessageType;
 
-import com.google.gson.annotations.SerializedName;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 public record ShellCompleteReply(
         @SerializedName("status") String status,

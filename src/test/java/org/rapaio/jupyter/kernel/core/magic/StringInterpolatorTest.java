@@ -1,11 +1,5 @@
 package org.rapaio.jupyter.kernel.core.magic;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,6 +8,12 @@ import org.rapaio.jupyter.kernel.channels.Channels;
 import org.rapaio.jupyter.kernel.core.ExecutionContext;
 import org.rapaio.jupyter.kernel.core.RapaioKernel;
 import org.rapaio.jupyter.kernel.core.magic.interpolate.StringInterpolator;
+
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class StringInterpolatorTest {
 

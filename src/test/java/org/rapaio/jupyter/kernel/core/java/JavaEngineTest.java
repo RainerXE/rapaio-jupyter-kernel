@@ -1,23 +1,18 @@
 package org.rapaio.jupyter.kernel.core.java;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertInstanceOf;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import jdk.jshell.JShell;
+import jdk.jshell.Snippet;
+import jdk.jshell.SnippetEvent;
+import jdk.jshell.SourceCodeAnalysis;
+import org.junit.jupiter.api.Test;
+import org.rapaio.jupyter.kernel.GeneralProperties;
+import org.rapaio.jupyter.kernel.TestUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
-import org.rapaio.jupyter.kernel.GeneralProperties;
-import org.rapaio.jupyter.kernel.TestUtils;
-
-import jdk.jshell.JShell;
-import jdk.jshell.Snippet;
-import jdk.jshell.SnippetEvent;
-import jdk.jshell.SourceCodeAnalysis;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JavaEngineTest {
 

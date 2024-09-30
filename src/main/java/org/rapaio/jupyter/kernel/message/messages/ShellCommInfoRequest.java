@@ -1,9 +1,8 @@
 package org.rapaio.jupyter.kernel.message.messages;
 
+import com.google.gson.annotations.SerializedName;
 import org.rapaio.jupyter.kernel.message.ContentType;
 import org.rapaio.jupyter.kernel.message.MessageType;
-
-import com.google.gson.annotations.SerializedName;
 
 public record ShellCommInfoRequest(
         @SerializedName("target_name") String targetName) implements ContentType<ShellCommInfoRequest> {

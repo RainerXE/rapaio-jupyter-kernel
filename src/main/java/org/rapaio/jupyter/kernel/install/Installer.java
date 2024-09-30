@@ -1,5 +1,9 @@
 package org.rapaio.jupyter.kernel.install;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import org.rapaio.jupyter.kernel.GeneralProperties;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -11,11 +15,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-
-import org.rapaio.jupyter.kernel.GeneralProperties;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 public class Installer {
 

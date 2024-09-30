@@ -1,10 +1,10 @@
 package org.rapaio.jupyter.kernel.message.messages;
 
-import java.util.Collections;
-
 import org.rapaio.jupyter.kernel.core.display.DisplayData;
 import org.rapaio.jupyter.kernel.message.ContentType;
 import org.rapaio.jupyter.kernel.message.MessageType;
+
+import java.util.Collections;
 
 public class ShellInspectReply extends DisplayData implements ContentType<ShellInspectReply> {
 

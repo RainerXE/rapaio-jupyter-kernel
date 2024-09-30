@@ -1,12 +1,5 @@
 package org.rapaio.jupyter.kernel.core.magic.handlers;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import java.util.List;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -14,6 +7,10 @@ import org.rapaio.jupyter.kernel.channels.Channels;
 import org.rapaio.jupyter.kernel.core.RapaioKernel;
 import org.rapaio.jupyter.kernel.core.magic.MagicEvalException;
 import org.rapaio.jupyter.kernel.core.magic.MagicSnippet;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JarMagicHandlerTest {
 

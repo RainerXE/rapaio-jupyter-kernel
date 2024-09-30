@@ -1,12 +1,11 @@
 package org.rapaio.jupyter.kernel.message.messages;
 
-import org.rapaio.jupyter.kernel.message.ContentType;
-import org.rapaio.jupyter.kernel.message.adapters.IdentityJsonElementAdapter;
-import org.rapaio.jupyter.kernel.message.MessageType;
-
 import com.google.gson.JsonObject;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
+import org.rapaio.jupyter.kernel.message.ContentType;
+import org.rapaio.jupyter.kernel.message.MessageType;
+import org.rapaio.jupyter.kernel.message.adapters.IdentityJsonElementAdapter;
 
 public record CustomCommOpen(
         @SerializedName("comm_id") String commId,

@@ -1,22 +1,17 @@
 package org.rapaio.jupyter.kernel.core.magic.handlers;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-import java.util.function.Consumer;
-import java.util.logging.Logger;
-
 import org.rapaio.jupyter.kernel.core.RapaioKernel;
 import org.rapaio.jupyter.kernel.core.magic.MagicEvalException;
 import org.rapaio.jupyter.kernel.core.magic.MagicHandler;
 import org.rapaio.jupyter.kernel.core.magic.MagicSnippet;
 import org.rapaio.jupyter.kernel.core.magic.SnippetMagicHandler;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+import java.util.function.Consumer;
+import java.util.logging.Logger;
 
 public class BashMagicHandler extends MagicHandler {
 

@@ -1,22 +1,18 @@
 package org.rapaio.jupyter.kernel.core.magic.dependencies;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-import java.io.IOException;
-import java.text.ParseException;
-import java.util.Set;
-import java.util.stream.Collectors;
-
 import org.eclipse.aether.repository.RemoteRepository;
 import org.eclipse.aether.resolution.DependencyResolutionException;
 import org.eclipse.aether.resolution.DependencyResult;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.rapaio.jupyter.kernel.core.magic.handlers.RepoParam;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.Set;
+import java.util.stream.Collectors;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MimaDependencyManagerTest {
 

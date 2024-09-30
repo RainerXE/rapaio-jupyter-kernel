@@ -1,6 +1,6 @@
 package org.rapaio.jupyter.kernel.core.display.text;
 
-import java.awt.Color;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 

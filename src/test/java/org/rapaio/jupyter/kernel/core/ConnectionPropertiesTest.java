@@ -1,13 +1,13 @@
 package org.rapaio.jupyter.kernel.core;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+import org.rapaio.jupyter.kernel.message.HMACDigest;
 
 import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
-import org.junit.jupiter.api.Test;
-import org.rapaio.jupyter.kernel.message.HMACDigest;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ConnectionPropertiesTest {
 

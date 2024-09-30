@@ -1,13 +1,12 @@
 package org.rapaio.jupyter.kernel.message.adapters;
 
-import java.lang.reflect.Type;
-
-import org.rapaio.jupyter.kernel.message.messages.IOPubStatus;
-
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParseException;
+import org.rapaio.jupyter.kernel.message.messages.IOPubStatus;
+
+import java.lang.reflect.Type;
 
 public class PublishStatusAdapter implements JsonDeserializer<IOPubStatus> {
     public static final PublishStatusAdapter INSTANCE = new PublishStatusAdapter();

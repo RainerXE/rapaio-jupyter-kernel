@@ -1,22 +1,14 @@
 package org.rapaio.jupyter.kernel.core.java;
 
+import jdk.jshell.execution.DirectExecutionControl;
+import jdk.jshell.spi.SPIResolutionException;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.UUID;
-import java.util.concurrent.CancellationException;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import jdk.jshell.execution.DirectExecutionControl;
-import jdk.jshell.spi.SPIResolutionException;
 
 public class RapaioExecutionControl extends DirectExecutionControl {
 

@@ -1,21 +1,17 @@
 package org.rapaio.jupyter.kernel.core.magic.handlers;
 
+import org.rapaio.jupyter.kernel.core.CompleteMatches;
+import org.rapaio.jupyter.kernel.core.ExecutionContext;
+import org.rapaio.jupyter.kernel.core.RapaioKernel;
+import org.rapaio.jupyter.kernel.core.display.text.ANSI;
+import org.rapaio.jupyter.kernel.core.magic.*;
+
 import java.io.File;
 import java.io.FileFilter;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import org.rapaio.jupyter.kernel.core.CompleteMatches;
-import org.rapaio.jupyter.kernel.core.ExecutionContext;
-import org.rapaio.jupyter.kernel.core.RapaioKernel;
-import org.rapaio.jupyter.kernel.core.display.text.ANSI;
-import org.rapaio.jupyter.kernel.core.magic.MagicEvalException;
-import org.rapaio.jupyter.kernel.core.magic.MagicHandler;
-import org.rapaio.jupyter.kernel.core.magic.MagicHandlerTools;
-import org.rapaio.jupyter.kernel.core.magic.MagicSnippet;
-import org.rapaio.jupyter.kernel.core.magic.SnippetMagicHandler;
 
 public class JarMagicHandler extends MagicHandler {
 

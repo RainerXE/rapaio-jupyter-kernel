@@ -1,8 +1,5 @@
 package org.rapaio.jupyter.kernel.core.magic.handlers;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 import org.rapaio.jupyter.kernel.core.RapaioKernel;
 import org.rapaio.jupyter.kernel.core.display.DisplayData;
 import org.rapaio.jupyter.kernel.core.display.text.ANSI;
@@ -10,6 +7,9 @@ import org.rapaio.jupyter.kernel.core.magic.MagicEvalException;
 import org.rapaio.jupyter.kernel.core.magic.MagicHandler;
 import org.rapaio.jupyter.kernel.core.magic.MagicSnippet;
 import org.rapaio.jupyter.kernel.core.magic.SnippetMagicHandler;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class HelpMagicHandler extends MagicHandler {
 

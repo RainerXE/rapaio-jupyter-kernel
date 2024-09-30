@@ -1,9 +1,9 @@
 package org.rapaio.jupyter.kernel.core.java.io;
 
+import org.rapaio.jupyter.kernel.channels.Channels;
+
 import java.io.InputStream;
 import java.io.OutputStream;
-
-import org.rapaio.jupyter.kernel.channels.Channels;
 
 public class JShellConsole {
 

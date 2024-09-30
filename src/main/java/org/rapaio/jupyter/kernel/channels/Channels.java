@@ -1,23 +1,19 @@
 package org.rapaio.jupyter.kernel.channels;
 
+import org.rapaio.jupyter.kernel.core.ConnectionProperties;
+import org.rapaio.jupyter.kernel.core.RapaioKernel;
+import org.rapaio.jupyter.kernel.message.*;
+import org.rapaio.jupyter.kernel.message.messages.ErrorReply;
+import org.rapaio.jupyter.kernel.message.messages.IOPubStatus;
+import org.rapaio.jupyter.kernel.message.messages.IOPubStream;
+import org.zeromq.ZMQ;
+
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
-
-import org.rapaio.jupyter.kernel.core.ConnectionProperties;
-import org.rapaio.jupyter.kernel.core.RapaioKernel;
-import org.rapaio.jupyter.kernel.message.ContentType;
-import org.rapaio.jupyter.kernel.message.HMACDigest;
-import org.rapaio.jupyter.kernel.message.Message;
-import org.rapaio.jupyter.kernel.message.MessageId;
-import org.rapaio.jupyter.kernel.message.MessageType;
-import org.rapaio.jupyter.kernel.message.messages.ErrorReply;
-import org.rapaio.jupyter.kernel.message.messages.IOPubStatus;
-import org.rapaio.jupyter.kernel.message.messages.IOPubStream;
-import org.zeromq.ZMQ;
 
 @SuppressWarnings({"unchecked", "rawtypes"})
 public final class Channels {

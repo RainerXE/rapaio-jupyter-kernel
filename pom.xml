@@ -35,13 +35,34 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>22</maven.compiler.source>
-        <maven.compiler.target>22</maven.compiler.target>
-        <maven.compiler.release>22</maven.compiler.release>
-        <java.version>22</java.version>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <maven.compiler.release>23</maven.compiler.release>
+        <java.version>23</java.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.graalvm.polyglot</groupId>
+            <artifactId>polyglot</artifactId>
+            <version>24.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.graalvm.polyglot</groupId>
+            <artifactId>python</artifactId>
+            <version>24.1.0</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.graalvm.polyglot</groupId>
+            <artifactId>js</artifactId>
+            <version>24.1.0</version>
+            <type>pom</type>
+        </dependency>
+
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -83,9 +104,7 @@
             <version>5.11.0</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
@@ -123,6 +142,9 @@
                 <configuration>
                     <reuseForks>true</reuseForks>
                     <!--suppress UnresolvedMavenProperty -->
+                    <argLine>
+                        --add-modules jdk.incubator.vector
+                    </argLine>
                 </configuration>
             </plugin>
             <plugin>

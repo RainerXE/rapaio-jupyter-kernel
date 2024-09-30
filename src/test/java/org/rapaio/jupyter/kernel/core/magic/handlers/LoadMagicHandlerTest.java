@@ -1,13 +1,5 @@
 package org.rapaio.jupyter.kernel.core.magic.handlers;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.Mockito.mock;
-
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.util.List;
-import java.util.Map;
-
 import org.junit.jupiter.api.Test;
 import org.rapaio.jupyter.kernel.TestUtils;
 import org.rapaio.jupyter.kernel.channels.Channels;
@@ -18,6 +10,14 @@ import org.rapaio.jupyter.kernel.core.magic.MagicSnippet;
 import org.rapaio.jupyter.kernel.message.Message;
 import org.rapaio.jupyter.kernel.message.MessageType;
 import org.rapaio.jupyter.kernel.message.messages.ShellExecuteRequest;
+
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.List;
+import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.mock;
 
 public class LoadMagicHandlerTest {
 

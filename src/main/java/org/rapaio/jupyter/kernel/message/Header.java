@@ -1,11 +1,11 @@
 package org.rapaio.jupyter.kernel.message;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.time.Instant;
 import java.time.format.DateTimeFormatter;
 import java.util.TimeZone;
 import java.util.UUID;
-
-import com.google.gson.annotations.SerializedName;
 
 public record Header<T>(
         @SerializedName("id") String id,

@@ -1,11 +1,11 @@
 package org.rapaio.jupyter.kernel.core.java.io;
 
+import org.rapaio.jupyter.kernel.channels.Channels;
+
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
-
-import org.rapaio.jupyter.kernel.channels.Channels;
 
 public class JShellInputStream extends InputStream {
     private static final Charset encoding = StandardCharsets.UTF_8;

@@ -1,23 +1,16 @@
 package org.rapaio.jupyter.kernel.core.magic;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Optional;
-
 import org.rapaio.jupyter.kernel.core.CompleteMatches;
 import org.rapaio.jupyter.kernel.core.ExecutionContext;
 import org.rapaio.jupyter.kernel.core.RapaioKernel;
 import org.rapaio.jupyter.kernel.core.display.DisplayData;
-import org.rapaio.jupyter.kernel.core.magic.handlers.BashMagicHandler;
-import org.rapaio.jupyter.kernel.core.magic.handlers.ClasspathMagicHandler;
-import org.rapaio.jupyter.kernel.core.magic.handlers.DependencyHandler;
-import org.rapaio.jupyter.kernel.core.magic.handlers.HelpMagicHandler;
-import org.rapaio.jupyter.kernel.core.magic.handlers.ImageMagicHandler;
-import org.rapaio.jupyter.kernel.core.magic.handlers.JarMagicHandler;
-import org.rapaio.jupyter.kernel.core.magic.handlers.JavaReplMagicHandler;
-import org.rapaio.jupyter.kernel.core.magic.handlers.LoadMagicHandler;
+import org.rapaio.jupyter.kernel.core.magic.handlers.*;
 import org.rapaio.jupyter.kernel.core.magic.interpolate.StringInterpolator;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Optional;
 
 public class MagicEngine {
 

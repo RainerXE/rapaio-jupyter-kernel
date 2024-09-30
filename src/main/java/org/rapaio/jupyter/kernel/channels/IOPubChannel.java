@@ -1,11 +1,11 @@
 package org.rapaio.jupyter.kernel.channels;
 
-import java.util.logging.Logger;
-
 import org.rapaio.jupyter.kernel.core.ConnectionProperties;
 import org.rapaio.jupyter.kernel.message.HMACDigest;
 import org.zeromq.SocketType;
 import org.zeromq.ZMQ;
+
+import java.util.logging.Logger;
 
 public final class IOPubChannel extends AbstractChannel {
 

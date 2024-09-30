@@ -1,8 +1,8 @@
 package org.rapaio.jupyter.kernel.install;
 
-import java.util.Map;
-
 import com.google.gson.annotations.SerializedName;
+
+import java.util.Map;
 
 public record KernelJson(
         @SerializedName("argv") String[] argv,

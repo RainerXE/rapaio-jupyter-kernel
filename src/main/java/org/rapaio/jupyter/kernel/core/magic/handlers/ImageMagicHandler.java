@@ -1,5 +1,12 @@
 package org.rapaio.jupyter.kernel.core.magic.handlers;
 
+import org.rapaio.jupyter.kernel.core.CompleteMatches;
+import org.rapaio.jupyter.kernel.core.RapaioKernel;
+import org.rapaio.jupyter.kernel.core.display.DisplayData;
+import org.rapaio.jupyter.kernel.core.display.MIMEType;
+import org.rapaio.jupyter.kernel.core.magic.*;
+
+import javax.imageio.ImageIO;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -10,18 +17,6 @@ import java.util.Base64;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import javax.imageio.ImageIO;
-
-import org.rapaio.jupyter.kernel.core.CompleteMatches;
-import org.rapaio.jupyter.kernel.core.RapaioKernel;
-import org.rapaio.jupyter.kernel.core.display.DisplayData;
-import org.rapaio.jupyter.kernel.core.display.MIMEType;
-import org.rapaio.jupyter.kernel.core.magic.MagicEvalException;
-import org.rapaio.jupyter.kernel.core.magic.MagicHandler;
-import org.rapaio.jupyter.kernel.core.magic.MagicHandlerTools;
-import org.rapaio.jupyter.kernel.core.magic.MagicSnippet;
-import org.rapaio.jupyter.kernel.core.magic.SnippetMagicHandler;
 
 public class ImageMagicHandler extends MagicHandler {
 

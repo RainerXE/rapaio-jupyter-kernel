@@ -1,10 +1,9 @@
 package org.rapaio.jupyter.kernel.core;
 
-import java.util.List;
-
+import com.google.gson.annotations.SerializedName;
 import org.rapaio.jupyter.kernel.core.display.DisplayData;
 
-import com.google.gson.annotations.SerializedName;
+import java.util.List;
 
 public interface ExpressionValue {
 

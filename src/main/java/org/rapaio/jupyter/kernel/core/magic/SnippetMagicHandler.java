@@ -1,20 +1,15 @@
 package org.rapaio.jupyter.kernel.core.magic;
 
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.b;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.br;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.each;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.join;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.space;
-import static org.rapaio.jupyter.kernel.core.display.html.Tags.texts;
+import org.rapaio.jupyter.kernel.core.CompleteMatches;
+import org.rapaio.jupyter.kernel.core.RapaioKernel;
+import org.rapaio.jupyter.kernel.core.display.DisplayData;
+import org.rapaio.jupyter.kernel.core.display.text.ANSI;
 
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Predicate;
 
-import org.rapaio.jupyter.kernel.core.CompleteMatches;
-import org.rapaio.jupyter.kernel.core.RapaioKernel;
-import org.rapaio.jupyter.kernel.core.display.DisplayData;
-import org.rapaio.jupyter.kernel.core.display.text.ANSI;
+import static org.rapaio.jupyter.kernel.core.display.html.Tags.*;
 
 public record SnippetMagicHandler(
         MagicSnippet.Type type,

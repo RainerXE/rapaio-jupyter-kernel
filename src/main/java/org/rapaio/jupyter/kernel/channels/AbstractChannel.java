@@ -1,12 +1,5 @@
 package org.rapaio.jupyter.kernel.channels;
 
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.logging.Logger;
-
 import org.rapaio.jupyter.kernel.core.ConnectionProperties;
 import org.rapaio.jupyter.kernel.core.Transform;
 import org.rapaio.jupyter.kernel.message.HMACDigest;
@@ -16,6 +9,13 @@ import org.rapaio.jupyter.kernel.message.MessageType;
 import org.rapaio.jupyter.kernel.message.messages.ErrorReply;
 import org.zeromq.SocketType;
 import org.zeromq.ZMQ;
+
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Logger;
 
 
 public abstract sealed class AbstractChannel extends Thread

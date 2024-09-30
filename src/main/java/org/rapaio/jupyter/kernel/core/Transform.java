@@ -1,29 +1,19 @@
 package org.rapaio.jupyter.kernel.core;
 
+import com.google.gson.*;
+import com.google.gson.reflect.TypeToken;
+import org.rapaio.jupyter.kernel.message.ContentType;
+import org.rapaio.jupyter.kernel.message.Header;
+import org.rapaio.jupyter.kernel.message.MessageType;
+import org.rapaio.jupyter.kernel.message.adapters.*;
+import org.rapaio.jupyter.kernel.message.messages.IOPubStatus;
+import org.rapaio.jupyter.kernel.message.messages.ShellHistoryRequest;
+
 import java.lang.reflect.Type;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Map;
-
-import org.rapaio.jupyter.kernel.message.ContentType;
-import org.rapaio.jupyter.kernel.message.Header;
-import org.rapaio.jupyter.kernel.message.MessageType;
-import org.rapaio.jupyter.kernel.message.adapters.ExpressionValueAdapter;
-import org.rapaio.jupyter.kernel.message.adapters.HeaderAdapter;
-import org.rapaio.jupyter.kernel.message.adapters.HistoryRequestAdapter;
-import org.rapaio.jupyter.kernel.message.adapters.MessageTypeAdapter;
-import org.rapaio.jupyter.kernel.message.adapters.PublishStatusAdapter;
-import org.rapaio.jupyter.kernel.message.adapters.ReplyTypeAdapter;
-import org.rapaio.jupyter.kernel.message.messages.IOPubStatus;
-import org.rapaio.jupyter.kernel.message.messages.ShellHistoryRequest;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.google.gson.reflect.TypeToken;
 
 public class Transform {
 
