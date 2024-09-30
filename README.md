@@ -59,14 +59,7 @@ For more details, you can follow [INSTALL.md](INSTALL.md).
 
 ## Maven central
 
-The project is also stored in maven central repositories and can be added as a dependency in maven as:
-
-```xml
-<dependency>
-    <groupId>io.github.padreati</groupId>
-    <artifactId>rapaio-jupyter-kernel</artifactId>
-    <version>2.1.0</version>
-</dependency>
+No Maven support yet.
 ```
 
 This is unnecessary, since the kernel is packaged as a self-contained jar archive (including all dependencies), 
